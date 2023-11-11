@@ -1,0 +1,68 @@
+.auth{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  .background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      z-index: 0;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center;
+        // filter: blur(4px);
+      }
+  
+  }
+  .container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red($color: #000000);
+    @media (min-width: 1536px) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+    
+
+  }
+}
+.con{
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+}
+ .left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 1536px) {
+        width: 50%;
+      }
+  }
+  .right{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.233);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    @media (min-width: 1536px) {
+          display: flex;
+        }
+    }
